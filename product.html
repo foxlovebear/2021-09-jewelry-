@@ -13,31 +13,27 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <script src="./jquery-3.4.1.js"></script>
-
-    <script src="./products/mycart/jquery-2.2.3.min.js"></script>
-    <script type='text/javascript' src="./products/mycart/jquery.mycart.js"></script>
-    <script type='text/javascript' src="./products/mycart/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./products/mycart/bootstrap.min.css">
-
     <link rel="stylesheet" href="./basic.css">
     <link rel="stylesheet" href="./product.css">
 
 </head>
 
 <body>
-<!-- 購物車 -->
-<div class="page-header">
+
+
+<!-- 標題與購物車icon -->
+<header class="page-header">
     <h2 class="brownItalicWords">yanyan's jewelry經典設計
-        <div style="float: right; cursor: pointer;">
+        <div style="cursor: pointer;">
             <span><i class="fas fa-cart-plus my-cart-icon" data-toggle="modal" data-target="#exampleModal" onclick="calculate()"></i>
                 <span class="badge my-cart-badge " id='lblCartCount'>0</span>
             </span>
         </div>
     </h2>
-</div>
+</header>
 <!-- Button trigger modal -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -72,36 +68,40 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 
 
 
 
-    <!-- Nav MENU --------------------------------------------------------------- -->
-    <!-- <div class="navi">
-        <a href="./index.html"><img src="./pic/Screenshot 2021-05-20 5.21.45 PM.png" alt="LOGO" width="150"
-                hight="75"></a>
+    <!-- Nav 導覽列 -->
+    <div class="navi d-flex align-items-center">
+        <a href="./index.html"><img src="./pic/Screenshot 2021-05-20 5.21.45 PM.png" alt="LOGO" width="150px"
+                height="85px"></a>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./product.html">product</a></li>
-            <li><a href="./news.html">news</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact">Contact</a></li>
+            <li><a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="./product.html"><i class="fas fa-cart-arrow-down"></i> product</a></li>
+            <!-- <li><a href="#NewsCarousel"><i class="fas fa-bullhorn"></i> news</a></li> -->
+            <!-- <li><a href="./about.html" >About</a></li> -->
+            <li><a href="./contact.html"><i class="far fa-comments"></i> Contact</a></li>
         </ul>
-    </div> -->
+    </div>
+
 
     <!-- TAB ------------------------------------------------------------------->
     
-    <header class="container">
-        <ul class="nav nav-tabs d-flex justify-content-center ">
-            <li class="active"><a data-toggle="tab" href="#Earrings">Earrings</a></li>
-            <li ><a data-toggle="tab" href="#Necklace">Necklace</a></li>
-            <li ><a data-toggle="tab" href="#Ring">Ring&Others</a></li>
+    <div class="container">
+        <ul class="nav nav-tabs d-flex justify-content-center " id="mytab">
+            <li class="nav-item active">
+                <a class="nav-link" data-toggle="tab" href="#Earrings"role="tab" aria-controls="Earrings" aria-selected="true">Earrings</a></li>
+            <li class="nav-item ">
+                <a class="nav-link" data-toggle="tab" href="#Necklace"role="tab" aria-controls="Necklace" aria-selected="false">Necklace</a></li>
+            <li class="nav-item ">
+                <a class="nav-link" id="nav-link-other" data-toggle="tab" href="#Ring"role="tab" aria-controls="Ring" aria-selected="false">Ring&Others</a></li>
         </ul>
         <!-- 商品列表 -->
-        <div class="tab-content tabs">
-            <div id="Earrings" class="tab-pane fade in active">
+        <div class="tab-content tabs mt-5"id="myTabContent">
+            <div id="Earrings" class="tab-pane fade show active" role="tabpanel" aria-labelledby="Earrings-tab">
                 <h3>Earrings</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, est! Autem, qua.</p>
                 <div  class="productEarrings row w-100">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Necklace" class="tab-pane fade">
+            <div id="Necklace" class="tab-pane fade" role="tabpanel" aria-labelledby="Necklace-tab">
                 <h3>Necklace</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, est! Autem, qua in menu 1.</p>
                 <div class="productEarrings row w-100">
@@ -167,16 +167,26 @@
                         <p id="e4Name">訂製烙印字母項鍊-金色</p>
                         <p>價格:<span> 2500</span></p>
                     </div>
-                </div>            </div>
+                </div>
+            </div>
             <div id="Ring" class="tab-pane fade">
                 <h3>Ring&Others</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, est! Autem, qua in menu 2.</p>
             </div>
         </div>
-    </header>
-
+    </div>
     
-
+<!-- --------------------------Footer-------------------------------- -->
+<footer class="">
+    <ul class="social_footer_ul d-flex justify-content-center ">
+        <li><a href="./index.html"><img src="./pic/Screenshot 2021-05-20 5.21.45 PM.png" alt="LOGO" width="150px"
+                    height="85px"></a>
+        </li>
+        <li><a href="https://www.facebook.com/yanyansjewelry/"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/yanyansjewelry/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/yanyansjewelry/"><i class="fab fa-line"></i></a></li>
+    </ul>
+</footer>
 
 
 
