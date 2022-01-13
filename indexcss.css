@@ -72,25 +72,21 @@ body {
 }
 
 /* ---------------------- NewsCarousel----------------------------- */
-#NewsCarousel {
-  position: relative;
-}
-
-#NewsCarousel img {
-  width: 35%;
-  margin: 15px 300px;
+.carousel-item img {
   border-radius: 10px;
+  display: flex;
+  margin: auto;
 }
 #NewsCarousel a {
-  margin: 0px 300px;
+  /* margin: 0 12.5rem; */
 }
 .carousel-indicators {
-  bottom: 20px;
+  bottom: 1.2rem;
 }
 #NewsCarousel p {
+  padding-top: 1rem;
   text-align: center;
 }
-
 /* ---------------------- 商品種類PRODUCTS----------------------------- */
 .product-catergory div {
   margin-bottom: 50px;
