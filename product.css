@@ -11,7 +11,13 @@ body {
   font-family: cursive;
   font-weight: lighter;
 }
-
+.setOnCenterVertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~項目清單導覽列~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navi {
   position: fixed;
@@ -56,10 +62,9 @@ body {
 
 /* ------------------------ Cart Icon-------------------------- */
 .page-header {
-  margin: 6rem 2rem 4rem 1.5rem;
+  margin: 8rem 0rem 3rem 0rem;
 }
-
-h1 {
+.pageTitle {
   text-align: center;
 }
 .badge {
@@ -71,12 +76,15 @@ h1 {
   margin-left: -10px;
   background-color: rgb(182, 89, 89);
   font-size: small;
+  color: rgb(75, 72, 72);
 }
 .my-cart-icon {
   position: fixed;
   top: 25%;
   right: 5%;
   z-index: 999;
+  font-size: 2rem;
+  color: rgb(75, 72, 72);
 }
 
 /* ---------------------- Tab切換----------------------------- */
@@ -85,7 +93,7 @@ h1 {
   border-bottom: 3px solid rgb(255, 244, 244);
 }
 .nav-link {
-  margin: 0 20px;
+  /* margin: 0 20px; */
   width: 130px;
   border: 2px solid rgb(255, 244, 244);
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;

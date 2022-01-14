@@ -2,6 +2,7 @@ body {
   background-color: rgb(207, 198, 187);
   display: flex;
   flex-direction: column;
+  color: rgb(75, 72, 72);
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~項目清單~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -54,15 +55,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main-content {
+/* .main-content {
   width: 100%;
-}
-.mainweb-header div {
+} */
+/* .mainweb-header div {
   width: 35%;
-}
-.main-content p {
+} */
+/* .main-content p {
   color: rgb(75, 72, 72);
-}
+} */
 .brownItalicWords {
   margin-top: 40px;
   color: rgb(75, 72, 72);
@@ -70,8 +71,14 @@ body {
   font-family: cursive;
   font-weight: lighter;
 }
-
+.yanyanIntro {
+}
 /* ---------------------- NewsCarousel----------------------------- */
+.newsTitle {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 1rem 0;
+}
 .carousel-item img {
   border-radius: 10px;
   display: flex;

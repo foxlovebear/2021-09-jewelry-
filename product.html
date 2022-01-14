@@ -19,19 +19,32 @@
 </head>
 
 <body>
+    <!-- Nav 導覽列 -->
+    <div class="navi d-flex align-items-center">
+        <a href="./index.html"><img src="./pic/Screenshot 2021-05-20 5.21.45 PM.png" alt="LOGO" width="150px"
+                height="85px"></a>
+        <ul>
+            <li><a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="./product.html"><i class="fas fa-cart-arrow-down"></i> product</a></li>
+            <!-- <li><a href="#NewsCarousel"><i class="fas fa-bullhorn"></i> news</a></li> -->
+            <!-- <li><a href="./about.html" >About</a></li> -->
+            <li><a href="./contact.html"><i class="far fa-comments"></i> Contact</a></li>
+        </ul>
+    </div>
 
 
-<!-- 標題與購物車icon -->
-<header class="page-header">
-    <h2 class="brownItalicWords">yanyan's jewelry經典設計
+    <!-- 標題與購物車icon -->
+    <header class="page-header">
+        <h2 class="brownItalicWords pageTitle ">yanyan's jewelry經典設計</h2>
+
+    </header>
         <div style="cursor: pointer;">
-            <span><i class="fas fa-cart-plus my-cart-icon" data-toggle="modal" data-target="#exampleModal" onclick="calculate()"></i>
+            <span><i class="fas fa-cart-plus my-cart-icon" data-toggle="modal" data-target="#exampleModal"
+                    onclick="calculate()"></i>
                 <span class="badge my-cart-badge " id='lblCartCount'>0</span>
             </span>
         </div>
-    </h2>
-</header>
-<!-- Button trigger modal -->
+    <!-- Button trigger modal -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -74,30 +87,17 @@
 
 
 
-    <!-- Nav 導覽列 -->
-    <div class="navi d-flex align-items-center">
-        <a href="./index.html"><img src="./pic/Screenshot 2021-05-20 5.21.45 PM.png" alt="LOGO" width="150px"
-                height="85px"></a>
-        <ul>
-            <li><a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
-            <li><a href="./product.html"><i class="fas fa-cart-arrow-down"></i> product</a></li>
-            <!-- <li><a href="#NewsCarousel"><i class="fas fa-bullhorn"></i> news</a></li> -->
-            <!-- <li><a href="./about.html" >About</a></li> -->
-            <li><a href="./contact.html"><i class="far fa-comments"></i> Contact</a></li>
-        </ul>
-    </div>
-
 
     <!-- TAB ------------------------------------------------------------------->
     
     <div class="container">
         <ul class="nav nav-tabs d-flex justify-content-center " id="mytab">
             <li class="nav-item active">
-                <a class="nav-link" data-toggle="tab" href="#Earrings"role="tab" aria-controls="Earrings" aria-selected="true">Earrings</a></li>
+                <a class="nav-link mx-md-3" data-toggle="tab" href="#Earrings"role="tab" aria-controls="Earrings" aria-selected="true">Earrings</a></li>
             <li class="nav-item ">
-                <a class="nav-link" data-toggle="tab" href="#Necklace"role="tab" aria-controls="Necklace" aria-selected="false">Necklace</a></li>
+                <a class="nav-link mx-md-3" data-toggle="tab" href="#Necklace"role="tab" aria-controls="Necklace" aria-selected="false">Necklace</a></li>
             <li class="nav-item ">
-                <a class="nav-link" id="nav-link-other" data-toggle="tab" href="#Ring"role="tab" aria-controls="Ring" aria-selected="false">Ring&Others</a></li>
+                <a class="nav-link mx-md-3" id="nav-link-other" data-toggle="tab" href="#Ring"role="tab" aria-controls="Ring" aria-selected="false">Ring&Others</a></li>
         </ul>
         <!-- 商品列表 -->
         <div class="tab-content tabs mt-5"id="myTabContent">
@@ -105,35 +105,35 @@
                 <h3>Earrings</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, est! Autem, qua.</p>
                 <div  class="productEarrings row w-100">
-                    <div id="e1Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="e1Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/earings/1.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="e1Btn" data-name="Wave pearl drop earrings" data-price="3200"
                             data-picture="./pic/earings/1.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e1Name">Wave pearl drop earrings</p>
                         <p>價格:<span> 3200</span></p>
                     </div>
-                    <!-- <div id="e2Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <!-- <div id="e2Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/earings/2.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="e2Btn" data-name="天然巴洛克幾何垂墜耳環" data-price="1800"
                             data-picture="./pic/earings/2.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e2Name">天然巴洛克幾何垂墜耳環</p>
                         <p>價格:<span> 2000</span></p>
                     </div> -->
-                    <div id="e1Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="e1Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/earings/1.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="e1Btn" data-name="Wave pearl drop earrings" data-price="3200"
                             data-picture="./pic/earings/1.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e1Name">Wave pearl drop earrings</p>
                         <p>價格:<span> 3200</span></p>
                     </div>
-                    <div id="e3Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="e3Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/earings/3.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="e3Btn" data-name="雙色純銀耳骨夾_單個" data-price="350"
                             data-picture="./pic/earings/3.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e3Name">雙色純銀耳骨夾_單個</p>
                         <p>價格:<span> 2500</span></p>
                     </div>
-                    <div id="e4Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="e4Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/earings/4.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="e4Btn" data-name="Pure drop 珍珠耳環" data-price="2000"
                             data-picture="./pic/earings/4.jpg" onclick="add(this)">新增至購物車</button>
@@ -146,28 +146,28 @@
                 <h3>Necklace</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, est! Autem, qua in menu 1.</p>
                 <div class="productEarrings row w-100">
-                    <div id="n1Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="n1Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/necklace/1.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="n1Btn" data-name="陪妳長長久久iris鑽石項鍊"
                             data-price="9900" data-picture="./pic/necklace/1.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e1Name">陪妳長長久久iris鑽石項鍊</p>
                         <p>價格:<span> 9900</span></p>
                     </div>
-                    <div id="n2Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="n2Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/necklace/2.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="n2Btn" data-name="Bee with you 純銀鍍金" data-price="2000"
                             data-picture="./pic/necklace/2.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e2Name">Bee with you 純銀鍍金</p>
                         <p>價格:<span> 1800</span></p>
                     </div>
-                    <div id="n3Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="n3Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/necklace/2-2.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="n3Btn" data-name="珍愛誓言" data-price="2500"
                             data-picture="./pic/necklace/2-2.jpg" onclick="add(this)">新增至購物車</button>
                         <p id="e3Name">珍愛誓言</p>
                         <p>價格:<span> 2500</span></p>
                     </div>
-                    <div id="n4Div" class="col-md-3 col-sm-1 d-flex flex-column align-items-center ">
+                    <div id="n4Div" class="col-md-3 col-sm-6 d-flex flex-column align-items-center ">
                         <img class="w-100 rounded h-50" src="./pic/necklace/4-3.jpg" alt="">
                         <button class="btn btn-secondary my-2 w-100" data-id="n4Btn" data-name="訂製烙印字母項鍊-金色" data-price="2500"
                             data-picture="./pic/necklace/4-3.jpg" onclick="add(this)">新增至購物車</button>
